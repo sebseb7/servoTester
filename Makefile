@@ -6,12 +6,12 @@ OPTIMIZATION = 1
 
 #########################################################################
 
-SRC=$(wildcard core/*.c drivers/*.c libs/*.c usb/src/*.c *.c)
+SRC=$(wildcard core/*.c drivers/src/*.c libs/*.c drivers/src/usb/*.c *.c)
 
 
 OBJECTS= $(SRC:.c=.o) 
 LSSFILES= $(SRC:.c=.lst) 
-HEADERS=$(wildcard core/*.h  *.h) 
+HEADERS=$(wildcard core/*.h drivers/inc/*.h *.h) 
 
 #  Compiler Options
 GCFLAGS = -std=gnu99 -mcpu=cortex-m3 -mthumb -O$(OPTIMIZATION) -I. -Icore 

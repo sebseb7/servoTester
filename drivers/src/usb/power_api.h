@@ -29,7 +29,7 @@
 #define USBROMD_PRESENT
 
 #ifdef USBROMD_PRESENT
-#include "../rom/mw_usbd_rom_api.h"
+#include "mw_usbd_rom_api.h"
 #endif
 
 typedef	struct _PWRD {
